@@ -66,10 +66,11 @@ name1 + 2 # 문자열은 연산할 수 없다.
 # 평균을 구한다면?
 x <- c(1,2,3)
 (x[1] + x[2] + x[3]) / 3
+
 mean(x)
 max(x)
 min(x)
-
+mean('ㅇ')
 x_maen <- mean(x)
 x_maen
 #### Quiz! english_score 변수에 10명의 점수를 임의로 할당하여 평균 mean(), 최대값 max(), 최소값 min(), 중앙값 median(), 표준편차 sd()를 구하시오 ####
