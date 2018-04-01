@@ -41,7 +41,8 @@ mean(df_midterm$math)     # df_midterm의 math로 평균 산술
 matrix1 <- matrix(c(1:100),10,10)
 matrix1
 # data.frame 변환
-as.data.frame(matrix1)
-
+df <- as.data.frame(matrix1)
+matrix2 <- as.matrix(df)
+matrix2
 
 #### Quiz 위에서 만든 데이터 프레임에 인덱싱 해보시오 ####
