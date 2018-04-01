@@ -1,3 +1,8 @@
+# Data Pre-processing 데이터 전처리
+# Data Manipulation(데이터 가공), Data Handling(데이터 핸들링), Data Wrangling(데이터 랭글링), Data Munging(데이터 먼징)등과 같은 용어도 데이터 전처리와 비슷한 의미로 사용
+
+# 일부를 추출, 종류별로 나눔, 여러 데이터 합침, 이상값, 결측값, 분포 조정 등 등
+
 #### 데이터 읽기, 쓰기(Data Read, Write) ####
 데이터 분석을 하려면 외부 데이터를 가져와야 한다.
 xlsx, txt, csv, rda, sas, sav, pdf. . . . . . .??? OMG!!!!!
