@@ -99,3 +99,14 @@ devtools::install_github("cardiomoon/editData")
 # ggplotAssist(ggplot2를 좀 더 쉽게)
 install.packages('stringi')
 devtools :: install_github ("cardiomoon/ggplotAssist") #SHA에러시 : force=TRUE 인자 추가
+
+#### DBI(DataBase Interface, DB 연결)  ####
+if (!require(devtools)) install.packages("devtools") 
+if (!require(DBI)) devtools::install_github("rstats-db/DBI")
+if (!require(RSQLite)) devtools::install_github("rstats-db/RSQLite")
+
+install.packages("dbplyr") # DB 연결 후 dplyr 패키지 사용
+install.packages("dtplyr") # DB 연결 후 data.table 패키지 사용
+
+#### 성능 비교 ####
+install.packages("microbenchmark")
