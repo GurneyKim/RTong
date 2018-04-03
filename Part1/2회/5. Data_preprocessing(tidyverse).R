@@ -1,8 +1,5 @@
-출처 : https://mrchypark.github.io/dabrp_classnote3/class3#52
+# 출처 : https://mrchypark.github.io/dabrp_classnote3/class3#52
 
-install.packages('tdiyverse')
-library(tidyverse)
-# tidyverse 패키지
 - tidy data 사상 + 파이프 연산자
 
 What is tidy data
@@ -17,6 +14,17 @@ What is tidy data
 3.1 Each type of observational unit forms a table.
 3.2 각 테이블은 단 하나의 관측기준에 의해서 조직된 데이터를 저장한다.
 3.3 각 테이블에는 단일 유형의 데이터가 들어간다
+
+- logn form vs wide form
+long form
+컴퓨터가 계산하기 좋은 모양
+tidy data의 요건을 충족
+tidyverse의 패키지 대부분의 입력 형태
+
+wide form
+사람이 눈으로 보기 좋은 모양
+2개 변수에 대한 값만 확인 가능
+dashboard 형이라고도 하며 조인 등 연산이 어려움
 
 # tidy 패키지
 1. gather() : wide form 데이터를 long form 으로 변환

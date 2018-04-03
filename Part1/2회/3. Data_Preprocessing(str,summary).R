@@ -2,11 +2,14 @@
 # https://mrchypark.github.io/dabrp_classnote3/class2#11 +a
 
 mpg <- read.csv('./data/mpg1.csv')#,row.names = 'X')
+# mpg <- mpg[,-1]
+head(mpg)
 
 # head(): 최초 6행의 데이터를 보여줌(행갯수 조절 가능)
 # tail(): 마지막 6행의 데이터를 보여줌(행갯수 조절 가능)
 # length(): 열 갯수 출력, 데이터의 길이 출력(vector)
 # nrow(): 행 갯수 출력(data.frame)
+# ncol(): 열 갯수 출력
 # dim(): (행,열) 데이터 차원 출력
 
 # View(): gui환경에서 데이터 확인
@@ -23,7 +26,8 @@ mpg <- read.csv('./data/mpg1.csv')#,row.names = 'X')
 # complete.cases(): 값이 모두 있는지 행단위로 검사
 
 # tibble(): 최근 기법으로 재구성한 tidyverse 패키지 군에서 사용하는 data.frame의 일종
-# data.table(): DB에서 사용하는 기법 등과 메모리 효율성을 극대화한 data.frame의 일종
+# as.data.table(): DB에서 사용하는 기법 등과 메모리 효율성을 극대화한 data.frame의 일종
+# http://using.tistory.com/81 # data.table 
 
 #### 변수명 변경 ####
 library(dplyr)

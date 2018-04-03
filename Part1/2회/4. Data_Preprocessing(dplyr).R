@@ -1,8 +1,7 @@
-#### reference ####
-참고 : 
-https://goo.gl/ea2iNm - 쉽게 배우는 R 데이터 분석 ch6(김영우)
-https://mrchypark.github.io/dabrp_classnote3/class3 - 데이터 분석의 기본이 되는 데이터 전처리 (박찬엽)
-https://github.com/hellogurney/ipds-kr/tree/master/ch03-data-processing - 따라하며 배우는 데이터 과학(권재명)
+#### Reference ####
+# https://goo.gl/ea2iNm - 쉽게 배우는 R 데이터 분석 ch6(김영우)
+# https://mrchypark.github.io/dabrp_classnote3/class3 - 데이터 분석의 기본이 되는 데이터 전처리 (박찬엽)
+# https://github.com/hellogurney/ipds-kr/tree/master/ch03-data-processing - 따라하며 배우는 데이터 과학(권재명)
 
 기본 베이스 함수들도 데이터 가공에 강력한 기능을 제공 하지만
 dplyr은 아름답다.
@@ -35,7 +34,9 @@ str(exam)
 #### dplyr::glimpse, tbl_df ####
 glimpse(exam) # dplyr::glimpse(exam)
 exam <- tbl_df(exam)
+head(exam)
 class(exam)  
+
 #### %>% 파이프라인 ####
 head(exam,10)
 exam %>% head() # 파이프연산자 %>%
