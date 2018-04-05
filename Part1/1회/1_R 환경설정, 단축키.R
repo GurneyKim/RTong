@@ -78,12 +78,20 @@ setwd('변경할 위치') #작업 디렉토리 변경
 
 #### 자주쓰는 packages ####
 
-# dplyr : 데이터 전처리
+# 요약통계량
+install.packages('psych') # describe(), describeBy()
+install.packages('pastecs') # stat.desc()
+
+# 데이터 전처리
 install.packages('dplyr')
 install.packages("tidyr")
+install.packages('readr')
+install.packages('data.table')
+install.packages('feather')
+install.packages('readxl')
 
 # ggplot2 : 데이터 시각화
-install.packages(ggplot2)
+install.packages('ggplot2')
 
 # caret : Classification and Regression Training(분류, 회귀)
 install.packages('caret', dependencies = c("Depends", "Suggests"))

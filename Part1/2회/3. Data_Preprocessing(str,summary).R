@@ -1,7 +1,7 @@
 #### 데이터 파악하기, 구조, 요약통계량 확인 ####
 # https://mrchypark.github.io/dabrp_classnote3/class2#11 +a
-
-mpg <- read.csv('./data/mpg1.csv')#,row.names = 'X')
+getwd()
+mpg <- read.csv('./Part1/2회/data/mpg1.csv')#,row.names = 'X')
 # mpg <- mpg[,-1]
 head(mpg)
 
@@ -21,6 +21,7 @@ head(mpg)
 # summary(): 각 컬럼의 자료형과 숫자라면 대표값을 함께 보여줌
 # psych::describe() : summary() 와 비슷 하지만 더 많은 요약 통계량을 준다.
 # psych::describeBy(mpg[c('cty','hwy')], mpg$drv) # 그룹별(factor) 요약통계량
+# pastecs::stat.desc()
 
 # is.na(): NA 인지 확인
 # complete.cases(): 값이 모두 있는지 행단위로 검사
