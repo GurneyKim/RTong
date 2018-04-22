@@ -1,7 +1,7 @@
 #### 데이터 파악하기, 구조, 요약통계량 확인 ####
 # https://mrchypark.github.io/dabrp_classnote3/class2#11 +a
 getwd()
-mpg <- read.csv('./Part1/2회/data/mpg1.csv')#,row.names = 'X')
+mpg <- read.csv('./data/mpg1.csv')#,row.names = 'X')
 # mpg <- mpg[,-1]
 head(mpg)
 

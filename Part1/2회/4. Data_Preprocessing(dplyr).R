@@ -2,7 +2,7 @@
 # https://goo.gl/ea2iNm - 쉽게 배우는 R 데이터 분석 ch6(김영우)
 # https://mrchypark.github.io/dabrp_classnote3/class3 - 데이터 분석의 기본이 되는 데이터 전처리 (박찬엽)
 # https://github.com/hellogurney/ipds-kr/tree/master/ch03-data-processing - 따라하며 배우는 데이터 과학(권재명)
-
+ # https://ugoproto.github.io/ugo_r_doc/dplyr.pdf - dplyr Cheat sheet
 기본 베이스 함수들도 데이터 가공에 강력한 기능을 제공 하지만
 dplyr은 아름답다.
 
@@ -25,7 +25,7 @@ library(dplyr)
 4. mutate() : 변수 추가
 5. summarise() : 통계치 산출 / group_by() : 집단별로 나누기 : 그룹 계산
 6.left_join() : 데이터 합치기(열)
-7.. bind_rows() : 데이터 합치기(열)
+7. bind_rows() : 데이터 합치기(열)
 
 exam <- read.csv("Data/csv_exam.csv")
 exam

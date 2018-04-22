@@ -10,6 +10,7 @@ english
 math <- c(50, 60, 100, 20)    # 수학 점수 변수 생성
 math
 
+
 # english, math로 데이터 프레임 생성해서 df_midterm에 할당
 df_midterm <- data.frame(english, math)
 df_midterm
@@ -27,7 +28,7 @@ df_midterm
 # df_midterm
 
 
-#### Quiz 데이터 프래임 3개 이상 만들어 보세요. ####
+#### Quiz 데이터 프래임 2개 이상 만들어 보세요. ####
 
 #### 데이터프레임 index ####
 df_midterm[,1]

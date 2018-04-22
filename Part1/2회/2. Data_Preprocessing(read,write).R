@@ -54,6 +54,7 @@ df_midterm <- data.frame(english = c(90, 80, 60, 70),
                          class = c(1, 1, 2, 2))
 df_midterm
 
+summary(df_midterm)
 write.csv(df_midterm, file = "./df_midterm.csv")
 write.table(df_midterm, file = './df_midterm.txt') # sep 구분자 차이
 
@@ -75,9 +76,17 @@ df_csv_exam
 
 # './data/iris*' 읽기 예제
 # iris1.csv
+iris1 <- read.csv('./data/iris1.csv', sep = ',')
+head(iris1)
 # iris2.txt
+iris2 <- read.csv('./data/iris2.txt', sep = ' ')
+head(iris2)
 # iris3.csv
+iris3 <- read.csv('./data/iris3.csv', skip = 1)
+head(iris3)
 # iris4.csv
+iris4 <- read.csv('./data/iris4.csv', sep = ';')
+iris4
 
 #### Quiz) data 폴더의 mpg 파일을 읽어보시오 ####
 # mpg1.csv
@@ -86,7 +95,6 @@ df_csv_exam
 # mpg4.txt 
 # mpg5.csv
 # mpg6.txt
-
 #### 다양한 파일 포맷 ####
 # https://goo.gl/FhXYkD 
 # csv, excel, sas, spss 파일 불러오기 / Case by Case!
@@ -138,7 +146,6 @@ library(feather) # feather
 
 big_df <- data.frame(v1 = rnorm(n = 1000000, mean = 0, sd = 1),
                      v2 = rnorm(n = 1000000, mean = 2, sd = 3))
-
 # write.csv VS write_csv VS fwrite VS saveRDS VS write_feather
 microbenchmark(write.csv(big_df, './data/big_df.txt', row.names = F),
                write_csv(big_df, './data/big_df.txt'),
@@ -174,7 +181,6 @@ big_df2 <- data.frame(rnrom1 = rnorm(n = 50000000, mean = 0, sd = 1),
 
 fwrite(big_df2, './data/big_df2.csv', sep = ',') # 2.4GB 생성
 big_df22 <- fread('./data/big_df2.csv')
-
 
 #### 3. DataBase 연결 ####
 # To be continued (미작성)
